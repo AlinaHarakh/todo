@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="" name="keywords"> 
+    <title>ToDo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="task_wrap">
+        <div class="allTask column">
+          <h2>Задачи</h2>
+        <form name="form">
+          <textarea rows="6" name="text"></textarea>
+          <select name="days">
+             <option>ПН</option>
+             <option>ВТ</option>
+             <option>СР</option>
+             <option>ЧТ</option>
+             <option>ПТ</option>
+          </select>
+
+          <select name="hours">
+             <option>9:00</option>
+             <option selected>10:00</option>
+             <option>11:00</option>
+             <option>12:00</option>
+             <option>13:00</option>
+             <option>14:00</option>
+             <option>15:00</option>
+          </select>
+          <input onclick="addTask()" class="btn" type="button" value="Добавить задачу">
+        </form>
+        <div id="info"></div>
+        </div>
+        <div class="doing column">
+          <h2>Исполняются</h2>
+          <div id="doingInfo" class="doing"></div>
+        </div>
+        <div class="done column">
+          <h2>Выполненные</h2>
+          <div id="doneInfo" class="done"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
